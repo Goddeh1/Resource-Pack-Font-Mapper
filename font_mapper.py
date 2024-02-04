@@ -19,8 +19,8 @@ def generate_json(file_path, png_files):
             "type": "bitmap",
             "file": f"{file_path}/{png_file}".replace("\\", "/"),
             "chars": [chr(char_code)],
-            "ascent": 121,  # cba
-            "height": 128   # cba
+            "ascent": 128,  # add in 'set to image width' later
+            "height": 128   # add in 'set to image width' later
         })
         char_code += 1
     output_filename = os.path.basename(os.path.normpath(file_path))
